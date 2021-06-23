@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Schedules!</h1>
+    <h2>Here are the schedules so far.</h2>
+    <ul>
+        <% for( let schedules of bookedEntries ) { %>
+        <div>
+            <ul>
+                <a href="/schedule/<%= schedules.id %> ">
+                    <p>Details</p>
+                </a>
+                <li>id: <%= schedules.id %></li>
+                <li>Date: <%=schedules.date %></li>
+                <li>Event: <%=schedules.event %></li>
+                <li>eventDescription: <%=schedules.eventDescription %></li>
+                <li>timeFrom: <%=schedules.timeFrom %></li>
+                <li>timeTo: <%=schedules.timeTo %></li>
+                <li>place: <%=schedules.place %></li>
+            </ul>
+            <br>
+        </div>
+        <% } %>
+    </ul>
+    <a href="/schedule/new">
+        <button>
+            NEW SCHEDULE
+        </button>
+    </a>
+
+</body>
+
+</html>

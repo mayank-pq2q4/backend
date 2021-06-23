@@ -1,0 +1,22 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "ESA sem project",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Murtuza Ali",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.14",
+    "needle": "^2.6.0",
+    "nodemon": "^2.0.7",
+    "routes": "^2.1.0",
+    "sentiment": "^5.0.2"
+  }
+}

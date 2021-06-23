@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost:3000/schedule" method="POST">
+        <h2>Schedule</h2>
+        <label for="date">
+            <input type="date" name="date">
+        </label>
+        <label for="event">
+            Event
+        </label>
+        <input type="text" name="event">
+        <label for="eventDescription">
+            eventDescription
+        </label>
+        <textarea name="eventDescription" cols="40" rows="10">
+
+            </textarea>
+        <label for="timeFrom">
+            timeFrom
+        </label>
+        <input type="time" name="timeFrom">
+        <label for="timeTo">
+            timeTo
+        </label>
+        <input type="time" name="timeTo">
+        <label for="place">
+            place
+        </label>
+        <input type="text" name="place">
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
