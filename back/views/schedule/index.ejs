@@ -5,36 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Schedules!</h1>
-    <h2>Here are the schedules so far.</h2>
-    <ul>
+    <h1 class="title is-1">Schedules!</h1>
+    <h2 class="subtitle is-2">Here are the schedules so far:</h2>
         <% for( let schedules of bookedEntries ) { %>
         <div>
-            <ul>
-                <a href="/schedule/<%= schedules.id %> ">
-                    <p>Details</p>
-                </a>
+            <article class="message is-dark">
+                <div class="message-header">
+                    <ul class="menu-list">
+                        <a href="/schedule/<%= schedules.id %> ">
+                            <button class="is-info is-rounded button">Details</button>
+                        </a>
+                </div>
                 <li>id: <%= schedules.id %></li>
                 <li>Date: <%=schedules.date %></li>
                 <li>Event: <%=schedules.event %></li>
-                <li>eventDescription: <%=schedules.eventDescription %></li>
+                <li>Event Description: <%=schedules.eventDescription %></li>
                 <li>timeFrom: <%=schedules.timeFrom %></li>
                 <li>timeTo: <%=schedules.timeTo %></li>
                 <li>place: <%=schedules.place %></li>
-            </ul>
-            <br>
-        </div>
-        <% } %>
     </ul>
-    <a href="/schedule/new">
-        <button>
-            NEW SCHEDULE
-        </button>
-    </a>
+    </article>
+    <br>
+    </div>
+    <% } %>
+    <span>
+        <a href="/schedule/new">
+            <button class="is-primary is-rounded button">
+                NEW SCHEDULE
+            </button>
+        </a>
+        <a href="/">
+            <button class="is-danger is-rounded button">
+                HOMEPAGE
+            </button>
+        </a>
+    </span>
 
 </body>
 

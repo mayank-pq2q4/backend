@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Welcome!</title>
 </head>
+
 <body>
-    <h1>Welcome to our scheduling/ tracking app!</h1>
-    <h2>Please select a service:</h2>
-    <a href="http://139.59.61.227:3000/schedule">
-    <button>
-        schedule an event!
-    </button>
-    </a>
-    <a href="http://139.59.61.227:3000/laundry">
-    <button>
-        track your laundry!
-    </button>
-    </a>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-wide is-offset-one-fifth">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-center">
+                            Hello!
+                        </p>
+                        <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1">Welcome to our scheduling/ tracking app!</h1>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="/schedule">
+                            <button class="is-primary is-rounded button card-footer-item ">schedule an event!</button>
+                        </a>
+                        <a href="/schedule">
+                            <button class="is-link is-rounded button card-footer-item">track your laundry!</button>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

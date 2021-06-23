@@ -5,38 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <form action="http://139.59.61.227:3000/schedule" method="POST">
-        <h2>Schedule</h2>
-        <label for="date">
-            <input type="date" name="date">
-        </label>
-        <label for="event">
-            Event
-        </label>
-        <input type="text" name="event">
-        <label for="eventDescription">
-            eventDescription
-        </label>
-        <textarea name="eventDescription" cols="40" rows="10">
-
-            </textarea>
-        <label for="timeFrom">
-            timeFrom
-        </label>
-        <input type="time" name="timeFrom">
-        <label for="timeTo">
-            timeTo
-        </label>
-        <input type="time" name="timeTo">
-        <label for="place">
-            place
-        </label>
-        <input type="text" name="place">
-        <button>Submit</button>
+    <form action="http://localhost:3000/schedule" method="POST">
+        <h2 class="title is-1">Schedule</h2>
+        <div class="field">
+            <label class="label is-large" for="date">
+                Date
+            </label>
+            <div class="control">
+                <input type="date" name="date">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label is-large" for="event">
+                Event
+            </label>
+            <div class="control">
+                <input type="text" name="event">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label is-large" for="eventDescription">
+                eventDescription
+            </label>
+            <div class="control">
+                <textarea name="eventDescription" placeholder="Event description"></textarea>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label is-large" for="timeFrom">
+                timeFrom
+            </label>
+            <div class="control">
+                <input type="time" name="timeFrom">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label is-large" for="timeTo">
+                timeTo
+            </label>
+            <div class="control">
+                <input type="time" name="timeTo">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label is-large" for="place">Place</label>
+            <div class="control">
+                <input name="place" class="input" type="text" placeholder="Text input">
+            </div>
+        </div>
+        <button class="button is-primary is-rounded button">Submit</button>
     </form>
 </body>
 

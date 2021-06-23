@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Sorry your schedule clashes with user: <%= id %> </h1>
-    <a href="http://139.59.61.227:3000/schedule/new">
-    <button>
+    <h1 class = "title is-1">Sorry your schedule clashes with user: <%= id %> </h1>
+    <a href="/schedule/new">
+    <button class="button is-primary is-rounded button">
         enter new schedule
     </button>
     </a>
-    <a href="http://139.59.61.227:3000/">
-    <button>
+    <a href="/">
+    <button class="button is-danger is-rounded button">
         go back to homepage
     </button>
     </a>
